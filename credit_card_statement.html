@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Axis Bank</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/OwlCarousel/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/OwlCarousel/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/js/select2-4.1.0-rc.0/select2-4.1.0-rc.0/dist/css/select2.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/credit_card_statement.css">
+
+</head>
+
+<body>
+  <!--container start-->
+  <header>
+    <div class="header__SkipToMainContainer">
+      <div class="container">
+        <div class="header__SkipToMainContent d-flex flex-row justify-content-end align-items-center">
+          <a href="javascript:void(0)" class="pr-3 text-capitalize skip_content">skip <span
+              class="text-lowercase">to</span> main
+            content</a>
+          <ul class="sizes text-uppercase ml-3">
+            <li><a href="javascript:void(0)" id="f-small" class="f-small zoom ml-2 mr-1">a-</a></li>
+            <li><a href="javascript:void(0)" id="normal" class="normal zoom mx-1">a</a></li>
+            <li><a href="javascript:void(0)" id="big" class="big zoom ml-1 mr-2">a+</a></li>
+            <li><button type="button" class="pr-2 pl-2 contrast1 mr-2 text-uppercase">a</button></li>
+            <li><button type="button" class="pr-2 pl-2 contrast2 text-uppercase">a</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--header section start-->
+  <!-- navbar part start here -->
+  <div class="container-fluid d-flex flex-row justify-content-between align-items-end" id="header_container">
+    <div class="bg-image">
+      <figure><img src="./assets/images/bg-axisbank.jpg" alt=""></figure>
+    </div>
+    <div class="navbar-container d-flex flex-row justify-content-center align-items-center">
+      <nav class="navbar navbar-expand-md d-flex flex-row justify-content-center align-items-center">
+        <a class="navbar-brand" href="index.html"><img src="./assets/images/brand-name.png"
+            alt="Axis Bank"></a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+          aria-expanded="false">
+          <span class="navbar-toggler-icon ham-icon"></span>
+          <span class="navbar-toggler-icon ham-icon"></span>
+          <span class="navbar-toggler-icon ham-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav navigation-nav text-capitalize d-flex flex-row align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">insta services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="javascript:void(0)">queries & requests</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <ul class="nav-container d-flex justify-content-around align-items-center">
+      <li class="nav-item icon_spacing">
+        <a class="nav-link home_icon" href="javascript:void(0)"><span class="icon-home-_nav"></span></a>
+      </li>
+      <li class="dropdown_wrap">
+        <a href="javascript:void(0)" id="dropdownServiceButton" class="dropdownServiceButton text-capitalize">insta
+          <span>services</span></a>
+        <div id="serviceDropdown" class="serviceDropdown dropdown-menu accordion"
+          aria-labelledby="dropdownServiceButton">
+          <div class="close_service">
+            <span class="icon-close"></span>
+          </div>
+          <div class="owl-carousel owl-theme d-flex">
+            <div class="items">
+              <a href="javascript:void(0)" id="headingOne" class="services_card card d-flex flex-column"
+                data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span class="insta_service_icons services"><img src="./assets/images/debit.svg" alt="Debit"></span>
+                <span class="services_link " class="text-capitalize text-center">Block Your
+                  Card</span>
+              </a>
+              <div id="collapseOne" class="collapse sub_services mob_sub_services" aria-labelledby="headingOne"
+                data-parent="#serviceDropdown">
+                <a href="https://application.axisbank.co.in/WebForms/axis-support/Block-dccard.aspx" class="card-body sub_services_link text-capitalize">
+                  Block Debit Card
+                </a>
+                <a href="https://application.axisbank.co.in/WebForms/axis-support/Block-cccard.aspx" class="card-body sub_services_link text-capitalize">
+                  Block Credit Card
+                </a>
+              </div>
+            </div>
+            <div class="items">
+              <a href="javascript:void(0)" id="headingTwo" class="services_card card d-flex flex-column" data-paths="4"
+                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <span class="insta_service_icons services"><img src="./assets/images/credit-card.svg"
+                    alt="Debit"></span>
+                <span class="services_link services" class="text-capitalize text-center">Report
+                  Unauthorized
+                  Transaction</span>
+              </a>
+              <div id="collapseTwo" class="collapse sub_services mob_sub_services" aria-labelledby="headingTwo"
+                data-parent="#serviceDropdown">
+                <a href="https://application.axisbank.co.in/webforms/axis-support/report-fraud.aspx" class="card-body sub_services_link text-capitalize">
+                  Report a fraud
+                </a>
+                <a href="https://application.axisbank.co.in/webforms/axis-support/report-fraud-dispute.aspx" class="card-body sub_services_link text-capitalize">
+                  Report a dispute
+                </a>
+              </div>
+            </div>
+            <div class="items">
+              <a href="https://application.axisbank.co.in/WebForms/axis-support/Request-Chequebook.aspx" id="headingThree" class="services_card card d-flex flex-column"
+                data-paths="11" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                aria-controls="collapseThree">
+                <span class="insta_service_icons services"><img src="./assets/images/cheque.svg" alt="Debit"></span>
+                <span class="services_link " class="text-capitalize text-center">Cheque book
+                  Request
+                </span>
+              </a>
+            </div>
+            <div class="items">
+              <a href="javascript:void(0)" id="headingFour" class="services_card card d-flex flex-column"
+                data-paths="23" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                aria-controls="collapseFour">
+                <span class="insta_service_icons services"><img src="./assets/images/download.svg" alt="Debit"></span>
+                <span class="services_link " class="text-capitalize text-center">Downloads</span>
+              </a>
+              <div id="collapseFour" class="collapse sub_services mob_sub_services" aria-labelledby="headingFour"
+                data-parent="#serviceDropdown">
+                <a href="https://application.axisbank.co.in/WebForms/axis-support/E-statement.aspx" class="card-body sub_services_link text-capitalize">
+                  savings & agri account statement
+                </a>
+                <a href="https://application.axisbank.co.in/WebForms/axis-support/CC-statement.aspx" class="card-body sub_services_link text-capitalize">
+                  credit card statement
+                </a>
+                <a href="https://application.axisbank.co.in/WebForms/axis-support/Interest-Certificate.aspx" class="card-body sub_services_link text-capitalize">
+                  home loan interest certificate
+                </a>
+                <a href="https://application.axisbank.co.in/WebForms/axis-support/RepaymentSchedule.aspx" class="card-body sub_services_link text-capitalize">
+                  repayment schedules
+                </a>
+                <a href="https://application.axisbank.co.in/WebForms/axis-support/paymydues.aspx" class="card-body sub_services_link text-capitalize">
+                  pay my dues
+                </a>
+              </div>
+            </div>
+            <div class="items">
+              <a href="javascript:void(0)" id="headingFive" class="services_card card d-flex flex-column" data-paths="5"
+                data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <span class="insta_service_icons services"><img src="./assets/images/Request.svg" alt="Debit"></span>
+                <span class="services_link services " class="text-capitalize text-center">Other
+                  Requests
+                </span>
+              </a>
+              <div id="collapseFive" class="collapse sub_services mob_sub_services" aria-labelledby="headingFive"
+                data-parent="#serviceDropdown">
+                <a href="https://easypay.axisbank.co.in/TaxPay?_ga=2.157067261.718306303.1620809513-1848737689.1618222791" class="card-body sub_services_link text-capitalize">
+                  pay taxes
+                </a>
+                <a href="javascript:void(0)" class="card-body sub_services_link text-capitalize update_email">
+                update email id (savings account)
+              </a>
+              <a href="javascript:void(0)" class="card-body sub_services_link text-capitalize update_address">
+                update address (savings account)
+              </a>
+              <a href="javascript:void(0)" class="card-body sub_services_link text-capitalize generate_debit">
+                generate debit card pin
+              </a>
+              <a href="javascript:void(0)" class="card-body sub_services_link text-capitalize generate_credit">
+                generate credit card pin
+              </a>
+              <a href="javascript:void(0)" class="card-body sub_services_link text-capitalize loan_repay">
+                loan repayment schedule
+              </a>
+              </div>
+            </div>
+            <div class="items">
+              <a href="javascript:void(0)" id="headingSix" class="services_card card d-flex flex-column"
+                data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <span class="insta_service_icons services"><img src="./assets/images/apply.svg" alt="Debit"></span>
+                <span class="services_link" class="text-capitalize text-center">Apply New
+                  Product /Service
+                  Instantly
+                </span>
+              </a>
+            </div>
+            <div class="items">
+              <a href="javascript:void(0)" id="headingSeven" class="services_card card d-flex flex-column"
+                data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSix">
+                <span class="insta_service_icons services"><img src="./assets/images/Loan_new.svg" alt="Debit"></span>
+                <span class="services_link" class="text-capitalize text-center">Place a Request - Loan
+                </span>
+              </a>
+              <div id="collapseSix" class="collapse sub_services mob_sub_services" aria-labelledby="headingSix"
+                data-parent="#serviceDropdown">
+                <a href="javascrip:void(0)" class="card-body sub_services_link text-capitalize">
+                  loan account statement via email
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="web_sub_services">
+            <div id="collapseOne" class="sub_services collapse" aria-labelledby="headingOne"
+              data-parent="#serviceDropdown">
+              <a href="https://application.axisbank.co.in/WebForms/axis-support/Block-dccard.aspx" class="card-body sub_services_link text-capitalize">
+                block debit card
+              </a>
+              <a href="https://application.axisbank.co.in/WebForms/axis-support/Block-cccard.aspx" class="card-body sub_services_link text-capitalize">
+                block credit card
+              </a>
+            </div>
+            <div id="collapseTwo" class="sub_services collapse" aria-labelledby="headingTwo"
+              data-parent="#serviceDropdown">
+              <a href="https://application.axisbank.co.in/webforms/axis-support/report-fraud.aspx" class="card-body sub_services_link text-capitalize">
+                report a fraud
+              </a>
+              <a href="https://application.axisbank.co.in/webforms/axis-support/report-fraud-dispute.aspx" class="card-body sub_services_link text-capitalize">
+                report a dispute
+              </a>
+            </div>
+            <div id="collapseThree" class="sub_services collapse" aria-labelledby="headingThree"
+              data-parent="#serviceDropdown">
+              <a href="https://application.axisbank.co.in/WebForms/axis-support/Request-Chequebook.aspx"
+                class="card-body sub_services_link text-capitalize">
+                Cheque book Request
+              </a>
+            </div>
+            <div id="collapseFour" class="sub_services collapse" aria-labelledby="headingFour"
+              data-parent="#serviceDropdown">
+              <a href="https://application.axisbank.co.in/WebForms/axis-support/E-statement.aspx" class="card-body sub_services_link text-capitalize">
+                savings & agri account statement
+              </a>
+              <a href="https://application.axisbank.co.in/WebForms/axis-support/CC-statement.aspx" class="card-body sub_services_link text-capitalize">
+                credit card statement
+              </a>
+              <a href="https://application.axisbank.co.in/WebForms/axis-support/Interest-Certificate.aspx" class="card-body sub_services_link text-capitalize">
+                home loan interest certificare
+              </a>
+              <a href="https://application.axisbank.co.in/WebForms/axis-support/RepaymentSchedule.aspx" class="card-body sub_services_link text-capitalize">
+                repayment schedules
+              </a>
+              <a href="https://application.axisbank.co.in/WebForms/axis-support/paymydues.aspx" class="card-body sub_services_link text-capitalize">
+                pay my dues
+              </a>
+            </div>
+            <div id="collapseFive" class="sub_services collapse" aria-labelledby="headingFive"
+              data-parent="#serviceDropdown">
+              <a href="https://easypay.axisbank.co.in/TaxPay?_ga=2.167952487.718306303.1620809513-1848737689.1618222791" class="card-body sub_services_link text-capitalize">
+                pay taxes
+              </a>
+              <a href="javascript:void(0)" class="card-body sub_services_link text-capitalize update_email">
+                update email id (savings account)
+              </a>
+              <a href="javascript:void(0)" class="card-body sub_services_link text-capitalize update_address">
+                update address (savings account)
+              </a>
+              <a href="javascript:void(0)" class="card-body sub_services_link text-capitalize generate_debit">
+                generate debit card pin
+              </a>
+              <a href="javascript:void(0)" class="card-body sub_services_link text-capitalize generate_credit">
+                generate credit card pin
+              </a>
+              <a href="javascript:void(0)" class="card-body sub_services_link text-capitalize loan_repay">
+                loan repayment schedule
+              </a>
+            </div>
+            <div id="collapseSeven" class="sub_services collapse" aria-labelledby="headingSeven"
+              data-parent="#serviceDropdown">
+              <a href="javascrip:void(0)" class="card-body sub_services_link text-capitalize">
+                Loan account statement via email
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="dropdown_wrap">
+        <a href="javascript:void(0)" id="dropdownQueryButton" class="dropdownQueryButton text-capitalize">queries &
+          <span>requests</span></a>
+        <div id="queryDropdown" class="queryDropdown dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <div class="close_service">
+            <span class="icon-close"></span>
+          </div>
+          <div class="query_section">
+            <span class="query_helper">I have a query related to</span>
+            <span class="sub_dropdown_menu">
+              <select id='query1' class="submit_query1 select2_dropdown query js-states form-control" required data-error="Choose an operation">
+                <option></option>
+              </select>
+            </span>
+            <span class="query_step query2_wrap" id="query2_wrap">
+              <span class="query_helper">specific to</span>
+              <span class="sub_dropdown_menu">
+                <select id='query2' class="submit_query2 select2_dropdown query js-states form-control" required data-error="Choose an operation">
+                  <option></option>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </span>
+            </span>
+            <span class="query_step query3_wrap" id="query3_wrap">
+              <span class="query_helper">for which I have an issue</span>
+              <span class="sub_dropdown_menu">
+                <select id='query3' class="submit_query3 select2_dropdown query js-states form-control" required data-error="Choose an operation">
+                  <option></option>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </span>
+            </span>
+            <span class="query_step query4_wrap notruncate" id="query4_wrap">
+              <span class="query_helper">with sub issue</span>
+              <span class="sub_dropdown_menu">
+                <select id='query4' class="submit_query4 select2_dropdown query js-states form-control" required data-error="Choose an operation">
+                  <option></option>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </span>
+            </span>
+          </div>
+          <div class="submit_query">
+            <button type="submit" class="submit_query_btn">Submit</button>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item icon_spacing">
+        <a class="nav-link search_icon" href="javascript:void(0)"><span class="icon-search"></span></a>
+      </li>
+    </ul>
+    <div class="queries-resolved d-flex flex-row justify-content-center align-items-end">
+      <p class="text-capitalize pr-3 mb-0">queries<span class="resolved d-block">resolved</span></p>
+      <span class="count pr-4">345459</span>
+    </div>
+  </div>
+  <!-- navbar part ends here -->
+    <!--main section start-->
+    <main class="credit_card_statement_page">
+      <!-- debit card section starts -->
+      <div class="debit_page_container">
+        <p class="page_title text-capitalize">quick actions</p>
+        <h2 class="debit_heading text-capitalize">download credit card statement</h2>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active"><a href="credit_card_statement.html" class="text-capitalize">download credit card statement</a>
+            </li>
+          </ol>
+        </nav>
+
+        <div id="carouselCreditControls" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="debit_content">
+                <div class="process_debit">
+                    <p class="debit_para">Process download credit card statement</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="country-code" placeholder="Enter Mobile Number" required>
+                            <label for="country-code" class="debit_label">Registered Mobile Number with country code</label>
+                          <small class="form-text text-muted">e.g:9198XXXXXX48</small>
+                        </div>
+                    </form>
+                    <div class="captcha">
+                        <form>
+                            <div class="form-group captcha_content">
+                              <input type="text" class="form-control" id="captcha_input" aria-describedby="emailHelp" placeholder="Enter Captcha" required>
+                              <label for="country-code" class="debit_label text-capitalize">Enter captcha</label>
+                              <div class="generate_captcha">
+                                <img src="./assets/images/GenerateCaptcha.png" alt="">
+                                <a href="javascript:void(0)" class="icon-refresh refresh_captcha"></a>
+                              </div>
+                            </div>
+                        </form>
+                        <div class="debit_buttons">
+                            <a href="javascript:void(0)" class="reset text-capitalize">reset</a>
+                            <a href="javascript:void(0)"  data-target="#carouselCreditControls" data-slide-to="1" class="enter_details text-capitalize">enter details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="notes">
+                    <p class="notes_header text-capitalize">please note</p>
+                    <ul class="note_content">
+                        <li>Your request will be processed instantly once your mobile number is authenticated</li>
+                        <li>Pop up should be enabled in the site settings else the document will not be downloaded</li>
+                    </ul>
+                </div>
+              </div>
+              <ul class="footer_disclaimer">
+                <li class="disclaimer_block">
+                  <a href="javascript:void(0)" class="disclaimer_link text-capitalize">
+                    disclaimer
+                  </a>
+                </li>
+                <li class="disclaimer_block">
+                  Copyright &#169; 2021 | <a href="index.html" class="axis_link" target="_blank">www.axisbank.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-item">
+              <div class="debit_content_2">
+                <div class="process_debit">
+                    <p class="debit_para">OTP will be sent to the email ID or mobile number registered with the bank</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="otp-code" placeholder="Enter Your OTP" required>
+                            <label for="otp-code" class="debit_label text-capitalize">enter <span class="text-uppercase">otp</span></label>
+                          <small class="form-text text-muted ">Did not recieve the OTP yet? <a href="javascript:void(0)" class="resend_otp text-capitalize">resend <span class="text-uppercase">otp</span></a></small>
+                        </div>
+                    </form>
+                    <div class="debit_buttons">
+                        <a href="javascript:void(0)"  data-target="#carouselCreditControls" data-slide-to="0" class="reset text-capitalize">back</a>
+                        <a href="javascript:void(0)"  data-target="#carouselCreditControls" data-slide-to="2" class="enter_details text-capitalize">verify <span class="text-uppercase">otp</span></a>
+                    </div>
+                </div>
+                <div class="notes">
+                    <p class="notes_header text-capitalize">please note</p>
+                    <ul class="note_content">
+                      <li>Your request will be processed instantly once your mobile number is authenticated</li>
+                      <li>Pop up should be enabled in the site settings else the document will not be downloaded</li>
+                    </ul>
+                </div>
+              </div>
+              <ul class="footer_disclaimer">
+                <li class="disclaimer_block">
+                  <a href="javascript:void(0)" class="disclaimer_link text-capitalize">
+                    disclaimer
+                  </a>
+                </li>
+                <li class="disclaimer_block">
+                  Copyright &#169; 2021 | <a href="index.html" class="axis_link" target="_blank">www.axisbank.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-item">
+              <div class="debit_content_3">
+                <div class="process_debit">
+                  <p class="debit_para">We found below active Credit Card(s) registered against your mobile number.
+                    Please select the Credit Card for which you need a statement.
+                  </p>
+                  <div class="select_debit_card">
+                    <p class="select_card_heading">Credit Card(s)</p>
+                    <ul class="cards">
+                      <li class="cards_content checkbox_label">
+                        <div class="select_box">
+                          <span class="icon-axis_short_logo"></span>
+                          <div class="checkbox_container">
+                            <span class="icon-debit_normal"></span>
+                            <span class="checkmark"></span>
+                          </div>
+                        </div>
+                        <input type="radio" class="checkbox" id="checkbox_card" name="check">
+                        <label class="account">5576 56XX XXXX 1686</label>
+                        <span class="account_type d-block text-uppercase">easy
+                          access salary account</span>
+                      </li>
+                      <li class="cards_content checkbox_label">
+                        <div class="select_box">
+                          <span class="icon-axis_short_logo"></span>
+                          <div class="checkbox_container">
+                            <span class="icon-debit_normal"></span>
+                            <span class="checkmark"></span>
+                          </div>
+                        </div>
+                        <input type="radio" class="checkbox" id="checkbox_card1" name="check">
+                        <label class="account">5576 56XX XXXX 1686</label>
+                        <span class="account_type d-block text-uppercase">asap
+                          account</span></p>
+                      </li>
+                      <!-- <label for="checkbox_card1" class="checkbox_label">
+                        <li class="cards_content">
+                          <div class="select_box">
+                            <span class="icon-axis_short_logo"></span>
+                            <div class="checkbox_container">
+                              <span class="icon-debit_normal"></span>
+                              <input type="radio" class="checkbox" id="checkbox_card1" name="check">
+                              <span class="checkmark"></span>
+                            </div>
+                          </div>
+                          <div class="account_no">
+                            <p class="account">5576 56XX XXXX 1686 <span class="account_type d-block text-uppercase">easy
+                                access salary account</span></p>
+                          </div>
+                        </li>
+                      </label>
+                      <label for="checkbox_card2" class="checkbox_label">
+                        <li class="cards_content">
+                          <div class="select_box">
+                            <span class="icon-axis_short_logo"></span>
+                            <div class="checkbox_container">
+                              <span class="icon-debit_normal"></span>
+                              <input type="radio" class="checkbox" id="checkbox_card2" name="check">
+                              <span class="checkmark"></span>
+                            </div>
+                          </div>
+                          <div class="account_no">
+                            <p class="account">5576 56XX XXXX 1686 <span class="account_type d-block text-uppercase">asap
+                                account</span></p>
+                          </div>
+                        </li>
+                      </label>
+                      <label for="checkbox_card3" class="checkbox_label">
+                        <li class="cards_content">
+                          <div class="select_box">
+                            <span class="icon-axis_short_logo"></span>
+                            <div class="checkbox_container">
+                              <span class="icon-debit_normal"></span>
+                              <input type="radio" class="checkbox" id="checkbox_card3" name="check">
+                              <span class="checkmark"></span>
+                            </div>
+                          </div>
+                          <div class="account_no">
+                            <p class="account">5576 56XX XXXX 1686 <span
+                                class="account_type d-block text-uppercase">savings account</span></p>
+                          </div>
+                        </li>
+                      </label> -->
+                    </ul>
+                  </div>
+                  <div class="debit_buttons">
+                    <a href="javascript:void(0)" data-target="#carouselCreditControls" data-slide-to="1"
+                      class="reset text-capitalize">back</a>
+                    <a href="javascript:void(0)" data-target="#carouselCreditControls" data-slide-to="3"
+                      class="enter_details text-capitalize">submit</a>
+                  </div>
+                </div>
+              </div>
+              <ul class="footer_disclaimer">
+                <li class="disclaimer_block">
+                  <a href="javascript:void(0)" class="disclaimer_link text-capitalize">
+                    disclaimer
+                  </a>
+                </li>
+                <li class="disclaimer_block">
+                  Copyright &#169; 2021 | <a href="index.html" class="axis_link" target="_blank">www.axisbank.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-item">
+              <div class="debit_content_4">
+                <div class="process_debit">
+                  <div class="block_content_section">
+                    <div class="blocked_card_content">
+                      <p class="great_text text-capitalize">great!</p>
+                      <p class="para_text"> You have successfully downloaded the statements for your account number</p>
+                      <div class="debit_buttons">
+                        <a href="index.html" class="close_btn text-capitalize">close</a>
+                      </div>
+                    </div>
+                    <div class="image">
+                      <img src="./assets/debit_images/great_image.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="footer_disclaimer">
+                <li class="disclaimer_block">
+                  <a href="javascript:void(0)" class="disclaimer_link text-capitalize">
+                    disclaimer
+                  </a>
+                </li>
+                <li class="disclaimer_block">
+                  Copyright &#169; 2021 | <a href="index.html" class="axis_link" target="_blank">www.axisbank.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="credit_modal">
+        <div class="credit_modal_content">
+          <div class="modal_text">
+            <p class="credit_modal_para">
+              You have successfully downloaded the statements for your account number
+            </p>
+            <div class="modal_cards modal_spacing">
+              <div class="logo">
+                <span class="icon-axis_short_logo"></span>
+              </div>
+              <div class="account_modal">
+                <p class="account_no_modal">5576 56XX XXXX 1686 <span class="account_type d-block text-uppercase">easy
+                    access salary account</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <a type="button" class="credit_btn close_credit_modal text-capitalize" id="no_btn" data-target="#carouselCreditControls">close</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- debit card section ends -->
+      <div class="credit_modal_2">
+        <div class="credit_modal_content">
+          <div class="internet_banking">
+            <p class="internet_header">You will be redirected to Internet Banking Login Page.</p>
+            <div class="internet_content">
+              <span class="d-block follow_bold">Follow the below path to update your address:
+                <span class="d-block follow_light">
+                  Click on Services >> Insta Services >> Enter Code received through SMS >> Select Contact >> Click on
+                  Update Address >> Enter Address >> Update
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="confirmation_buttons">
+            <p class="confirm_text ">Do you want to continue?</p>
+            <div class="btn_option">
+              <a href="javascript:void(0)" class="confirm_btn internet_banking_btn_open text-capitalize">yes</a>
+              <a href="javascript:void(0)" class="confirm_btn internet_banking_btn_close text-capitalize">no</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="credit_modal_2 modal_email">
+        <div class="credit_modal_content">
+          <div class="internet_banking">
+            <p class="internet_header">You will be redirected to Internet Banking Login Page.</p>
+            <div class="internet_content">
+              <span class="d-block follow_bold">Follow the below path to update your email ID:
+                <span class="d-block follow_light">
+                  Click on Services >> Insta Services >> Enter Code received through SMS >> Select Contact >> Click on
+                  Update Email ID >> Enter Email ID >> Update
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="confirmation_buttons">
+            <p class="confirm_text ">Do you want to continue?</p>
+            <div class="btn_option">
+              <a href="javascript:void(0)" class="confirm_btn internet_banking_btn_open_email text-capitalize">yes</a>
+              <a href="javascript:void(0)" class="confirm_btn internet_banking_btn_close text-capitalize">no</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="credit_modal_2 modal_address">
+        <div class="credit_modal_content">
+          <div class="internet_banking">
+            <p class="internet_header">You will be redirected to Internet Banking Login Page.</p>
+            <div class="internet_content">
+              <span class="d-block follow_bold">Follow the below path to update your address:
+                <span class="d-block follow_light">
+                  Click on Services >> Insta Services >> Enter Code received through SMS >> Select Contact >> Click on
+                  Update Address >> Enter Address >> Update
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="confirmation_buttons">
+            <p class="confirm_text ">Do you want to continue?</p>
+            <div class="btn_option">
+              <a href="javascript:void(0)" class="confirm_btn internet_banking_btn_open_address text-capitalize">yes</a>
+              <a href="javascript:void(0)" class="confirm_btn internet_banking_btn_close text-capitalize">no</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="credit_modal_2 modal_debit">
+        <div class="credit_modal_content">
+          <div class="internet_banking">
+            <p class="internet_header">You will be redirected to Internet Banking Login Page.</p>
+            <div class="internet_content">
+              <span class="d-block follow_bold">Follow the below path to update your Debit Card PIN:
+                <span class="d-block follow_light">
+                  Click on Accounts >> My Debit Cards >> Click on More Services >> Select Set Debit Card PIN >> Enter New
+                  PIN & Expiry Date >> Enter Netsecure Code
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="confirmation_buttons">
+            <p class="confirm_text ">Do you want to continue?</p>
+            <div class="btn_option">
+              <a href="javascript:void(0)" class="confirm_btn internet_banking_btn_open_debit text-capitalize">yes</a>
+              <a href="javascript:void(0)" class="confirm_btn internet_banking_btn_close text-capitalize">no</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="credit_modal_2 modal_credit">
+        <div class="credit_modal_content">
+          <div class="internet_banking">
+            <p class="internet_header">You will be redirected to Internet Banking Login Page.</p>
+            <div class="internet_content">
+              <span class="d-block follow_bold">Follow the below path to update your Credit Card PIN:
+                <span class="d-block follow_light">
+                  Click on Accounts >> My Debit Cards >> Click on More Services >> Select Set Debit Card PIN >> Enter New
+                  PIN & Expiry Date >> Enter Netsecure Code
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="confirmation_buttons">
+            <p class="confirm_text ">Do you want to continue?</p>
+            <div class="btn_option">
+              <a href="javascript:void(0)" class="confirm_btn internet_banking_btn_open_credit text-capitalize">yes</a>
+              <a href="javascript:void(0)" class="confirm_btn internet_banking_btn_close text-capitalize">no</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="credit_modal_2 modal_loan">
+        <div class="credit_modal_content">
+          <div class="internet_banking">
+            <p class="internet_header">You will be redirected to Internet Banking Login Page.</p>
+            <div class="internet_content">
+              <span class="d-block follow_bold">Follow the below path to update your Repayment Schedule:
+                <span class="d-block follow_light">
+                  Home Page >> Click on Accounts >> Click on Loans >> Select Loan Account No.>> Select ‘View Repayment
+                  Schedule’
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="confirmation_buttons">
+            <p class="confirm_text ">Do you want to continue?</p>
+            <div class="btn_option">
+              <a href="javascript:void(0)" class="confirm_btn internet_banking_btn_open_loan text-capitalize">yes</a>
+              <a href="javascript:void(0)" class="confirm_btn internet_banking_btn_close text-capitalize">no</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--main section start-->
+    <!--container end-->
+    <script src="./assets/css/jquery.js"></script>
+    <script src="./assets/js/select2-4.1.0-rc.0/select2-4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="./assets/css/bootstrap/bootstrap-popper.js"></script>
+    <script src="./assets/css/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/css/bootstrap/bootstrap.min.js"></script>
+    <script src="./assets/css/OwlCarousel/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="./assets/js/agri_account_statement.js"></script>
+    <script src="./assets/js/credit_card_statement.js"></script>
+</body>
+
+</html>

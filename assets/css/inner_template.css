@@ -1,0 +1,729 @@
+@font-face  {
+    src: url(./cssfonts/freakshow.regular.ttf);
+    font-family: freakshow-regular;
+}
+
+/*for animation*/
+.carousel-fade .carousel-item {
+	opacity: 0;
+	transition-duration: 0.3s;
+	transition-property: opacity;
+}
+.carousel-fade .carousel-item.active {
+	opacity: 1;
+}
+
+/*animation style ends here*/
+
+/*navbar start*/
+_:-ms-fullscreen, :root .serviceDropdown .services_card .services_link {
+    display: block;
+    width: 100%;
+}
+/*navbar end*/
+
+.debit_page_container {
+    margin-top: 35px;
+    position: relative;
+}
+
+.debit_heading {
+    font-family: lato-regular;
+    font-size: 1.813rem;
+    color: #97144d;
+    padding: 0 60px;
+}
+
+/*breadcrum*/
+.breadcrumb {
+    padding: 0 1rem 0 0;
+    background-color: transparent !important;
+    margin-bottom: 0 !important;
+    padding: 0 60px;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "\e93b";
+    color: #ababab;
+    font-family: 'icomoon';
+    display: inline-block;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    vertical-align: middle;
+    font-size: 7px;
+}
+
+.breadcrumb .breadcrumb-item a {
+    color: #434343;
+    font-size: 1rem;
+    font-family: lato-regular;
+}
+
+/*breadcrum end*/
+
+/*channel style start*/
+.debit_page_container .channels {
+    display: flex;
+    flex-direction: column;
+    min-height: 286px;
+    max-width: 67px;
+    padding: 30px 15px;
+    position: absolute;
+    right: 0;
+    top: 8%;
+    -webkit-box-shadow: 0 6px 45px 0 rgba(0,0,0,0.09);
+    -moz-box-shadow: 0 6px 45px 0 rgba(0,0,0,0.09);
+    box-shadow: 0 6px 45px 0 rgba(0,0,0,0.09);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.debit_page_container .channels .channel_items {
+    padding-bottom: 23px;
+    text-align: center;
+}
+.debit_page_container .channels .channel_items:last-child {
+    padding: 0;
+}
+.channel_items_text {
+    font-family: lato-regular;
+    font-size: 0.9rem;
+    color: #515151;
+}
+.channel_items_text:hover {
+    color: #97144d;
+}
+.icon-survey_email {
+    color: #171717;
+}
+/*channel style end*/
+
+.debit_content {
+    display: flex;
+    margin: 0 30px 0 60px;
+    padding: 28px 0;
+}
+
+.inner_template {
+    width: auto;
+    height: 50%;
+    padding: 37px 50px 50px 53px;
+    margin-right: 60px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 3px 40px 0 rgba(0,0,0,0.07);
+    -moz-box-shadow: 0 3px 40px 0 rgba(0,0,0,0.07);
+    box-shadow: 0 3px 40px 0 rgba(0,0,0,0.07);
+}
+
+.debit_para {
+    font-family: lato-regular;
+    font-size: 1.125rem;
+    color: #171717;
+}
+
+.inner_template p {
+    color: #171717;
+    font-size: 1rem;
+    font-family: lato-regular;
+}
+
+.inner_template a,.inner_template a:hover,.inner_template a:focus {
+    color: #97144d;
+}
+
+.inner_template .related_question_link,
+.related_question_link {
+    color: #171717;
+    font-size: 0.938rem;
+    font-family: lato-regular;
+}
+
+.related_question_link:hover {
+    color: #97144d;
+}
+
+.inner_template .form-text {
+    font-family: lato-bold;
+    font-size: 0.75rem;
+    color: #393939 !important;
+    opacity: 0.8;
+}
+
+.debit_label,
+.captcha_label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s ease all;
+    color: #393939;
+}
+
+.form-group .form-control {
+    border: 1px solid transparent !important;
+    border-bottom: 1px solid #D9D9D9 !important;
+    border-radius: 0 !important;
+    padding-left: 0 !important;
+}
+
+.inner_template .country-code,
+.inner_template .country-code::placeholder {
+    font-size: 1rem;
+}
+
+.feedback_yes {
+    margin-top: 20px;
+    display: none;
+}
+
+/* button */
+.debit_buttons {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.debit_buttons .enter_details {
+    font-family: lato-bold;
+    font-size: 1rem;
+    padding: 10px 35px;
+    background-color: #97144d;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 24px;
+}
+.debit_buttons .enter_details:hover {
+    background-color: #fff;
+    color: #97144D;
+    border: 1px solid #97144d;
+}
+
+.captcha_content {
+    width: 50%;
+}
+
+.notes {
+    width: 100%;
+    padding-right: 60px;
+}
+
+/*IE11*/
+input:not(:-ms-input-placeholder) + .debit_label,
+input:focus + .debit_label {
+    cursor: pointer;
+    color: #97144d;
+    -webkit-transform: translate(0, -0.8rem) scale(0.75);
+    -moz-transform:    translate(0, -0.6rem) scale(0.75);
+    -ms-transform:     translate(0, -0.6rem) scale(0.75);
+    -o-transform:      translate(0, -0.6rem) scale(0.75);
+    transform: translate(0, -0.6rem) scale(0.75);
+    transform-origin: left top;
+}
+
+/*IE11*/
+:-ms-input-placeholder + label {
+    cursor: text;
+    -webkit-transform: translate(0, 0.7rem) scale(1);
+    -moz-transform:    translate(0, 0.9rem) scale(1);
+    -ms-transform: translate(0, 0.4rem) scale(1);
+    -o-transform:      translate(0, 0.7rem) scale(1);
+    transform: translate(0, 0.4rem) scale(1);
+    transform-origin: left bottom;
+}
+
+.form-control:-ms-input-placeholder {
+    font-family: lato-regular;
+    font-size: 1rem;
+    opacity: 0 !important;
+}
+
+.form-control:focus:-ms-input-placeholder {
+    opacity: 0 !important;
+}
+
+textarea:not(:-ms-input-placeholder) + .debit_label,
+textarea:focus + .debit_label {
+    -ms-transform: translate(0, -0.6rem) scale(0.75);
+    cursor: pointer;
+    color: #97144d;
+    transform-origin: left top;
+}
+
+textarea:-ms-input-placeholder + label {
+    cursor: text;
+    -ms-transform: translate(0, 0.7rem) scale(1);
+    transform: translate(0, 0.7rem) scale(1);
+    transform-origin: left bottom;
+}
+
+_:-ms-fullscreen, :root .process_debit { 
+    width: auto !important;
+}
+
+_:-ms-fullscreen, :root .generate_captcha {
+    background-color: #e6e6e6;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: 227px;
+    height: 40px;
+    padding: 8px 5px 8px 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: #97144d;
+    font-size: 1.57143rem;
+    line-height: 1;
+    position: relative;
+
+}
+
+_:-ms-fullscreen, :root .form-control:not(:focus) + .debit_label {
+    border-bottom: 1px solid #D9D9D9;
+    width: 100%;
+    transition-duration: 0ms;
+}
+
+_:-ms-fullscreen, :root .form-control:focus + .debit_label {
+    border-bottom: none !important;
+}
+/*IE 11 end*/
+
+textarea:not(:placeholder-shown) + .debit_label,
+textarea:focus + .debit_label {
+    -webkit-transform: translate(0, -0.6rem) scale(0.75);
+    -moz-transform: translate(0, -0.6rem) scale(0.75);
+    -ms-transform: translate(0, -0.6rem) scale(0.75);
+    -o-transform: translate(0, -0.6rem) scale(0.75);
+    transform: translate(0, -0.6rem) scale(0.75);
+    cursor: pointer;
+    color: #97144d;
+    transform-origin: left top;
+}
+
+textarea:placeholder-shown + label {
+    cursor: text;
+    -webkit-transform: translate(0, 0.7rem) scale(1);
+    -moz-transform: translate(0, 0.7rem) scale(1);
+    -ms-transform: translate(0, 0.7rem) scale(1);
+    -o-transform: translate(0, 0.7rem) scale(1);
+    transform: translate(0, 0.7rem) scale(1);
+    transform-origin: left bottom;
+}
+
+
+/* notes */
+.notes_header {
+    font-family: lato-bold;
+    font-size: 1.25rem;
+    color: #171717;
+}
+
+.note_content li {
+  font-family: lato-regular;
+  font-size: 0.938rem;
+  color: #171717;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  opacity: 0.8;
+  position: relative;
+  padding-left: 20px;
+}
+
+.note_content li:before {
+  content: "";
+  background: url(../images/arrow.svg);
+  width: 8px;
+  height: 6px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: absolute;
+  top: 9px;
+  left: 0;
+}
+
+/* feedback */
+
+.feedback {
+    /* position: absolute;
+    bottom: -8%; */
+    margin: 0 30px 0px 60px;
+    padding: 28px 0px;
+}
+
+.feedback_buttons .btn_link {
+    padding: 5px 24px;
+    border-radius: 20px;
+    color: rgba(57,57,57,0.5);
+    border: 1px solid #D9D9D9;
+    background-color: #fff;
+    margin-right: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.feedback_buttons .btn_link:hover {
+    color: #fff;
+    background-color: #97144d;
+    border: 1px solid #97144d;
+}
+
+.debit_page_container .channels .channel_items .channel_links {
+    color: #171717;
+}
+
+.debit_page_container .channels .channel_items:hover .channel_links {
+    color: #97144d;
+}
+
+.channel_links .inner_icons {
+    color: #97144d;
+    font-size: 1.438rem;
+}
+
+/*debit-page4 css start*/
+.debit_content_4 {
+    display: none;
+    margin: 37px 85px 40px 60px;
+}
+
+.debit_content_4 .great_text {
+    font-family: lato-regular;
+    font-size: 1.813rem;
+    color: #97144d;
+    margin-bottom: 9px;
+}
+
+.debit_content_4 .process_debit {
+    padding: 27px 48px 0 57px;
+    margin-right: 0;
+    height: auto;
+    width: 100%;
+}
+
+.debit_content_4 .image {
+    width: 30%;
+    margin-left: 15px;
+}
+
+.debit_content_4 .image img {
+    width: 100%;
+}
+
+.debit_content_4 .blocked_card_content {
+    display: block;
+    width: 100%;
+}
+
+.debit_content_4 .block_content_section {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+
+.debit_content_4 .para_text {
+    font-family: lato-regular;
+    font-size: 1.125rem;
+    color: #171717;
+    margin-bottom: 50px;
+}
+
+.debit_content_4 .debit_buttons {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.debit_content_4 .close_btn {
+    padding: 10px 50px;
+    background-color: #97144d;
+    color: #fff;
+    border: 1px solid transparent;
+}
+.debit_content_4 .close_btn:hover,
+.debit_content_4 .close_btn:focus {
+    padding: 10px 50px;
+    background-color: #fff;
+    color: #97144d;
+    border: 1px solid #97144d;
+}
+
+.debit_content_4 .debit_buttons .enter_details {
+    font-family: lato-bold;
+    font-size: 1rem;
+    padding: 9px;
+    background-color: #97144d;
+    color: #fff;
+    border: 1px solid transparent;
+}
+/*debit-page4 css end*/
+
+.contact_header {
+    font-family: lato-bold;
+    font-size: 2.125rem;
+    color: #97144d;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.contact_note {
+    padding-top: 15px;
+    color: #97144d;
+}
+
+/*modal*/
+  /*modal content*/
+  .credit_modal {
+    /* display: none; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    height: 100vh;
+    width: 100%;
+    /* overflow: auto; */
+    background: rgba(0,0,0,0.6)
+}
+
+.credit_modal_content {
+    background-color: #fff;
+    width: 80%;
+    min-height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 40px 0 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.credit_modal .image {
+    display: flex;
+    align-self: flex-end;
+    width: 46%;
+}
+.modal_text {
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.credit_header_modal {
+    font-family: lato-bold;
+    font-size: 2.125rem;
+    color: #97144d;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.credit_modal_para {
+    font-family: lato-regular;
+    font-size: 1.063rem;
+    color: #2C2C2C;
+    text-transform: capitalize;
+    line-height: 1.2;
+}
+
+.chat_window, .nri_customer {
+    font-family: lato-regular;
+    font-size: 1.063rem;
+    color: #2C2C2C;
+    margin-bottom: 0 !important;
+}
+
+.nri_customer {
+    margin-top: 20px;
+}
+
+.chat_window {
+    margin-right: 20px;
+}
+
+.timing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.2;
+}
+
+.credit_btn_1, .credit_btn_2 {
+    padding: 9px 20px;
+    background-color: #97144d;
+    color: #fff !important;
+    font-family: lato-bold;
+    font-size: 1rem;
+    border: 1px solid #97144d;
+}
+.credit_btn_1:hover, .credit_btn_2:hover {
+    padding: 9px 20px;
+    background-color: #fff;
+    color: #97144d !important;
+    font-family: lato-bold;
+    font-size: 1rem;
+    border: 1px solid #97144d;
+}
+
+.credit_btn_1 {
+    margin-right: 10px;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+/*reponsiveness*/
+@media (max-width: 1200px) {
+    .credit_modal .image {
+        width: 60%;
+    }
+}
+@media (max-width: 1024px) {
+    .credit_modal .image {
+        width: 82%;
+    }
+    .credit_btn_1, .credit_btn_2 {
+        margin-bottom: 5px;
+    }
+
+    .credit_btn_2 {
+        padding: 9px 23px;
+    }
+}
+
+@media (max-width: 992px) {
+    .breadcrumb, .debit_heading {
+        padding: 0 20px;
+    }
+    .debit_content {
+        margin: 0 20px;
+        flex-direction: column;
+    }
+    .inner_template {
+        position: relative;
+        width: 100%;
+        margin-right: 30px;
+    }
+    .notes {
+        margin-top: 25px;
+        padding-right: 0;
+    }
+    .feedback {
+        position: static;
+        margin: 0px 0 0px 20px;
+        padding: 0 0 20px 0;
+    }
+    .inner_template p {
+        padding-right: 43px;
+    }
+    .debit_content_4 {
+        margin: 37px 20px 40px 20px;
+    }
+    .credit_modal .image {
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .debit_content {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    .inner_template {
+        margin-right: 0;
+    }
+    .debit_content_4 .image {
+        display: none;
+    }
+    .debit_content_4 .process_debit {
+        padding: 27px 24px 0 24px;
+    }
+    .credit_modal .image {
+        display: none;
+    }
+    .modal_text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    /*navbar start*/
+    _:-ms-fullscreen, :root .navbar-brand img {
+        width: 90px;
+    }
+    /*navbar ends*/
+    .breadcrumb {
+        display: none;
+    }
+    .debit_heading {
+        font-size: 1.6rem;
+    }
+    .form-group .debit_label {
+        font-size: 0.72rem;
+    }
+    .breadcrumb, .debit_heading {
+        padding: 0 15px;
+    }
+    .debit_content{
+        margin: 0 15px;
+    }
+    .inner_template {
+        min-width: 0;
+        width: 100%;
+        height: auto;
+        padding: 27px 24px;
+    }
+
+    .debit_page_container .channels {
+        padding: 30px 12px;
+    }
+
+    .captcha_content .icon-refresh {
+        margin-left: 20px;
+    }
+    .captcha_letter {
+        margin-left: 20px;
+    }
+    .debit_content {
+        margin: 0 15px;
+    }
+
+    .debit_content .enter_details {
+        padding: 9px 12.5px;
+    }
+    .feedback {
+        margin: 0px 15px;
+        padding: 0 0 20px 0;
+    }
+
+    .captcha_content {
+        width: 100%;
+    }
+
+    .debit_page_container .channels {
+        top: 3%;
+    }
+    .debit_content_4 {
+        margin: 37px 15px 40px 15px;
+    }
+    .credit_modal_content {
+        padding: 20px;
+    }
+}

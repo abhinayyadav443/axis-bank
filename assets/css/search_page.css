@@ -1,0 +1,140 @@
+@font-face  {
+    src: url(./cssfonts/freakshow.regular.ttf);
+    font-family: freakshow-regular;
+}
+
+/*for animation*/
+.carousel-fade .carousel-item {
+	opacity: 0;
+	transition-duration: 0.3s;
+	transition-property: opacity;
+}
+.carousel-fade .carousel-item.active {
+	opacity: 1;
+}
+
+/*animation style ends here*/
+
+/*navbar start*/
+_:-ms-fullscreen, :root .serviceDropdown .services_card .services_link {
+    display: block;
+    width: 100%;
+}
+/*navbar end*/
+
+.debit_page_container {
+    margin-top: 35px;
+}
+
+.debit_heading {
+    font-family: lato-regular;
+    font-size: 1.813rem;
+    color: #97144d;
+    padding: 0 60px;
+}
+
+/*breadcrum*/
+.breadcrumb {
+    padding: 0 1rem 0 0;
+    background-color: transparent !important;
+    margin-bottom: 0 !important;
+    padding: 0 60px;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "\e93b";
+    color: #ababab;
+    font-family: 'icomoon';
+    display: inline-block;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    vertical-align: middle;
+    font-size: 7px;
+}
+
+.breadcrumb .breadcrumb-item a {
+    color: #434343;
+    font-size: 1rem;
+    font-family: lato-regular;
+}
+
+/*breadcrum end*/
+
+.debit_content, .debit_content_2 {
+    display: flex;
+    margin: 0 60px 0 60px;
+    padding: 28px 0;
+}
+
+.process_debit {
+    width: 100%;
+    height: 584px;
+    padding: 37px 53px 50px 53px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 3px 40px 0 rgba(0,0,0,0.07);
+    -moz-box-shadow: 0 3px 40px 0 rgba(0,0,0,0.07);
+    box-shadow: 0 3px 40px 0 rgba(0,0,0,0.07);
+}
+
+
+.search_box {
+    width: 100%;
+    position: relative;
+}
+
+.search_box .form-group {
+    position: relative;
+}
+
+.search_box .form-group .form-control {
+    padding-right: 60px;
+}
+
+.icon-input {
+    right: 3%;
+}
+
+@media (max-width: 768px) {
+    .debit_content, .debit_content_2 {
+        display: flex;
+        margin: 0 30px 0 30px;
+        padding: 28px 0;
+    }
+    .breadcrumb, .debit_heading {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    _:-ms-fullscreen, :root .navbar-brand img {
+        width: 90px;
+    }
+    .breadcrumb {
+        display: none;
+    }
+    .debit_heading {
+        font-size: 1.6rem;
+    }
+    .process_debit {
+        height: 400px;
+        padding: 37px 20px 50px;
+    }
+    .debit_content, .debit_content_2 {
+        display: flex;
+        margin: 0 15px 0 15px;
+        padding: 28px 0;
+    }
+    .breadcrumb, .debit_heading {
+        padding: 0 15px;
+    }
+    .form-group .search_close_icon, .icon-input span {
+        font-size: 18px !important;
+    }
+    .form-group .search_close_icon {
+        margin: 0 5px 0 0;
+    }
+
+    .result_container {
+        height: 219px !important;
+    }
+
+} 

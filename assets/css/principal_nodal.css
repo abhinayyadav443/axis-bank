@@ -1,0 +1,898 @@
+@font-face  {
+    src: url(./cssfonts/freakshow.regular.ttf);
+    font-family: freakshow-regular;
+}
+
+/*for animation*/
+.carousel-fade .carousel-item {
+	opacity: 0;
+	transition-duration: 0.3s;
+	transition-property: opacity;
+}
+.carousel-fade .carousel-item.active {
+	opacity: 1;
+}
+
+.page_unfade {
+    opacity: 1;
+}
+
+.active_fade {
+    opacity: 0;
+	transition-duration: 0.3s;
+	transition-property: opacity;
+}
+
+/*animation style ends here*/
+
+/*navbar start*/
+_:-ms-fullscreen, :root .serviceDropdown .services_card .services_link {
+    display: block;
+    width: 100%;
+}
+/*navbar end*/
+
+.debit_page_container {
+    margin-top: 35px;
+}
+
+.debit_heading {
+    font-family: lato-regular;
+    font-size: 1.813rem;
+    color: #97144d;
+    padding: 0 60px;
+}
+
+/*breadcrum*/
+.breadcrumb {
+    padding: 0 1rem 0 0;
+    background-color: transparent !important;
+    margin-bottom: 0 !important;
+    padding: 0 60px;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "\e93b";
+    color: #ababab;
+    font-family: 'icomoon';
+    display: inline-block;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    vertical-align: middle;
+    font-size: 7px;
+}
+
+.breadcrumb .breadcrumb-item a {
+    color: #434343;
+    font-size: 1rem;
+    font-family: lato-regular;
+}
+
+/*breadcrum end*/
+
+.debit_content, .debit_content_2 {
+    display: flex;
+    margin: 0 30px 0 60px;
+    padding: 28px 0;
+}
+
+.process_debit {
+    width: 100%;
+    height: auto;
+    padding: 35px 40px;
+    margin-right: 60px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 3px 40px 0 rgba(0,0,0,0.07);
+    -moz-box-shadow: 0 3px 40px 0 rgba(0,0,0,0.07);
+    box-shadow: 0 3px 40px 0 rgba(0,0,0,0.07);
+}
+
+.debit_header {
+    color: #171717;
+    font-size: 1.25rem;
+    font-family: lato-bold;
+}
+
+.debit_para {
+    font-family: lato-regular;
+    font-size: 1.125rem;
+    color: #171717;
+}
+
+.form-group .debit_label {
+    font-family: lato-regular;
+    font-size: 1rem;
+    margin-bottom: 0 !important;
+}
+
+.form-control {
+    border: 0 ;
+}
+
+.form-control::placeholder {
+    font-family: lato-regular;
+    font-size: 1rem;
+    opacity: 0;
+}
+
+.form-control:focus::placeholder {
+    opacity: 1;
+}
+
+.process_debit .form-text {
+    font-family: lato-bold;
+    font-size: 0.75rem;
+    color: #393939 !important;
+    opacity: 0.8;
+}
+
+.form-group {
+    position: relative;
+}
+
+.captcha_label {
+    font-size: 1.125rem;
+}
+/*axis way start*/
+
+.form-group .debit_label,
+.select_box_container .debit_label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7px 0 0 0;
+    -webkit-transition: all 200ms;
+    -o-transition: all 200ms;
+    -moz-transition: all 200ms;
+    transition: all 200ms;
+    font-family: lato-regular;
+    font-size: 1rem;
+    margin-bottom: 0 !important;
+    pointer-events: none;
+}
+
+.select_box_container .debit_label {
+    padding: 0 0 7px 0;
+}
+
+.form-group .form-control:focus + .debit_label,
+.form-group .form-control:valid + .debit_label {
+    font-size: 90%;
+    color: #97144d;
+    -webkit-transform: translate3d(0, -75%, 0);
+    -moz-transform: translate3d(0, -75%, 0);
+    transform: translate3d(0, -75%, 0);
+}
+
+/*for select box*/
+.select_box_container .select_input + .debit_labell {
+    font-size: 90% !important;
+    color: #97144d;
+    -webkit-transform: translate3d(0, -75%, 0);
+    -moz-transform: translate3d(0, -75%, 0);
+    transform: translate3d(0, -75%, 0);
+}
+
+.form-group .form-control:not(:focus)::-ms-input-placeholder,
+.form-group .form-control:not(:valid)::-ms-input-placeholder {
+    opacity: 0 !important;
+}
+
+.form-group .form-control:focus::-ms-input-placeholder,
+.form-group .form-control:valid::-ms-input-placeholder {
+    opacity: 1 !important;
+}
+
+.debit_label.active_1 {
+    transform: translate(0, -1rem) scale(0.85);
+    cursor: pointer;
+    color: #97144d;
+    transform-origin: left top;
+    font-size: 100% !important;
+}
+
+_:-ms-fullscreen, :root .form-control:not(:focus) + .debit_label {
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 2px;
+    transition-duration: 0ms;
+    width: 100%;
+}
+
+_:-ms-fullscreen, :root .form-control:focus + .debit_label {
+    border-bottom: none !important;
+}
+
+/*axis way end*/
+
+.form-control:-ms-input-placeholder {
+    font-family: lato-regular;
+    font-size: 1rem;
+    opacity: 0 !important;
+}
+
+.form-control:focus:-ms-input-placeholder {
+    opacity: 0 !important;
+}
+_:-ms-fullscreen, :root .notes { 
+    display: block !important;
+    /* width: 100% !important; */
+}
+_:-ms-fullscreen, :root .generate_captcha {
+    background-color: #e6e6e6;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: 227px;
+    height: 40px;
+    padding: 8px 5px 8px 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: #97144d;
+    font-size: 1.57143rem;
+    line-height: 1;
+    position: relative;
+}
+
+_:-ms-fullscreen, :root .form-control:not(:focus) + .debit_label {
+    border-bottom: 1px solid #D9D9D9;
+    width: 100%;
+    transition-duration: 0ms;
+}
+
+_:-ms-fullscreen, :root .form-control:focus + .debit_label {
+    border-bottom: none !important;
+}
+/*IE 11 end*/
+
+.select2-container--focus + .debit_label {
+    transform: translate(0, -1rem) scale(0.75);
+    cursor: pointer;
+    color: #97144d;
+    transform-origin: left top;
+}
+
+.select2 .select2-selection__placeholder + label {
+    cursor: text;
+    transform-origin: left bottom;
+    transform: translate(0, 0.7rem) scale(1);
+}
+
+.process_debit .form-group .form-control {
+    border: 1px solid transparent !important;
+    border-bottom: 1px solid #D9D9D9 !important;
+    border-radius: 0 !important;
+    padding-left: 0 !important;
+    height: auto;
+}
+
+.process_debit .country-code,
+.process_debit .country-code::placeholder {
+    font-size: 1rem;
+}
+
+.captcha_content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px !important;
+}
+
+.captcha_input::placeholder {
+    font-family: lato-regular;
+    font-size: 1.25rem;
+    color: var(--debit_small);
+}
+
+#captcha_input {
+    font-size: 1.125rem;
+}
+
+.captcha_letter {
+    font-size: 0.938rem;
+    padding: 0 5px;
+    color: var(--debit_small);
+    margin-left: 20px;
+    font-family: freakshow-regular;
+}
+
+.generate_captcha {
+    background-color: #e6e6e6;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    padding: 8px 10px 8px 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: #97144d;
+    font-size: 1.57143rem;
+    line-height: 1;
+    position: relative;
+
+}
+
+.refresh_captcha,
+.refresh_captcha:hover {
+    position: absolute;
+    right: 10px;
+    color: #97144d;
+}
+
+.icon-refresh::before {
+    font-size: 1.375rem;
+}
+
+/* button */
+.debit_buttons {
+    display: flex;
+}
+
+.debit_buttons .reset {
+    font-family: lato-bold;
+    font-size: 1rem;
+    padding: 9px 25px;
+    background-color: #F0F0F0;
+    margin-right: 15px;
+    color: #171717;
+    opacity: 0.6;
+    border: 1px solid transparent;
+}
+
+.debit_buttons .enter_details {
+    font-family: lato-bold;
+    font-size: 1rem;
+    padding: 9px;
+    background-color: #97144d;
+    color: #fff;
+    border: 1px solid transparent;
+}
+.debit_buttons .enter_details:hover {
+    background-color: #fff;
+    color: #97144d;
+    border: 1px solid #97144d;
+}
+
+.active_1 {
+    transform: translate(0, -1rem) scale(0.75);
+    cursor: pointer;
+    color: #97144d;
+    transform-origin: left top;
+}
+
+.select2-container--default .select2-results__option--group {
+    width: 100%;
+}
+.l2 {
+    padding-left: 20px !important;
+}
+.level1 {
+    padding-left: 0 !important;
+}
+/* selctbox end */
+
+.form-control, .form-control:focus {
+    background-color: transparent;
+}
+.form-group {
+    margin-bottom: 42px !important;
+}
+.form1, .form2_content {
+    display: flex;
+}
+
+.form1 {
+    align-items: flex-start;
+    margin-bottom: 32px;
+}
+
+.form2_content {
+    align-items: flex-end;
+    background-color: #FAFAFA;
+}
+
+.form1_part1, .form1_part2,
+.form2_part1, .form2_part2 {
+    width: 100%;
+}
+
+.form2_part1 form:last-child .form-group,
+.form2_part2 form:last-child .form-group {
+    margin-bottom: 0 !important;
+}
+
+.form1 form, .form2 form {
+    width: 69%;
+}
+.select2 {
+    width: 100% !important;
+}
+
+.form2 {
+    margin: 35px 0 46px 0;
+}
+
+.form2_content {
+    padding: 25px 25px 35px 25px;
+}
+
+.contact_text, .checkbox_text {
+    font-family: lato-regular;
+    font-size: 1.125rem;
+    color: #171717;
+}
+
+.register_emailid {
+    display: flex;
+    margin-bottom: 38px;
+}
+
+.form2_part2 .image {
+    margin-right: 16px;
+}
+.form2_part2 .image img {
+    height: 37px;
+    width: 37px;
+}
+
+.clickhere {
+    color: #97144d;
+    font-size: 1.125rem;
+    font-family: lato-regular;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.clickhere:hover, .clickhere:focus {
+    text-decoration: underline !important;
+    color: #97144d;
+}
+
+.register_email_header, .desc_modal, .credit_title, .desc_modal_item_link {
+    color: #171717;
+}
+
+.desc_modal {
+    padding:  0 0 0 40px;
+    font-size: 0.875rem;
+    
+}
+
+.desc_modal_item {
+    display: list-item;
+    list-style-type: disc;
+    font-size: 0.875rem;
+}
+
+.desc_modal_item_link:hover {
+    color: #97144d;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.register_email_modal {
+    overflow:auto;
+    max-height:500px;
+    text-align:left;
+}
+
+.link_email {
+    display: block;
+    margin-bottom: 0 !important;
+}
+.email_text {
+    line-height: 1.2;
+}
+
+.captcha_content {
+    width: 35%;
+    margin-bottom: 0 !important;
+}
+
+/*custom checkbox*/
+/* The container */
+.checkbox_container {
+    display: inline-block;
+    position: relative;
+    margin: 0 39px 12px 0;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkbox_container .checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: 1px solid #707070;
+    border-radius: 4px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .checkbox_container:hover .checkbox ~ .checkmark {
+    background-color: #fff;
+    border: 1px solid #707070;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkbox_container .checkbox:checked ~ .checkmark {
+    background-color: #97144d;
+    display: block;
+  }
+
+  .checkbox_container .checkbox:checked ~ .checkmark:after {
+      border-color: #fff;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  
+  /* Show the checkmark when checked */
+  .checkbox_container .checkbox:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkbox_container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #97144d;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+/*custom checkbox end*/
+
+.authorization_checkbox {
+    display: flex;
+    margin: 40px 0;
+}
+
+.enter_details {
+    padding: 9px 48px !important;
+}
+
+/*debit-page4 css start*/
+.debit_content_4 {
+    display: none;
+    margin: 37px 85px 40px 60px;
+}
+
+.debit_content_4 .great_text {
+    font-family: lato-regular;
+    font-size: 1.813rem;
+    color: #97144d;
+    margin-bottom: 9px;
+}
+
+.debit_content_4 .process_debit {
+    padding: 27px 48px 0 57px;
+    margin-right: 0;
+    height: auto;
+    width: 100%;
+}
+
+.debit_content_4 .image {
+    width: 30%;
+    margin-left: 15px;
+}
+
+.debit_content_4 .image img {
+    width: 100%;
+}
+
+.debit_content_4 .blocked_card_content {
+    display: block;
+    width: 100%;
+}
+
+.debit_content_4 .block_content_section {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+
+.debit_content_4 .para_text {
+    font-family: lato-regular;
+    font-size: 1.125rem;
+    color: #171717;
+    margin-bottom: 50px;
+}
+
+.debit_content_4 .debit_buttons {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.debit_content_4 .close_btn {
+    padding: 10px 50px;
+    background-color: #97144d;
+    color: #fff;
+    border: 1px solid transparent;
+}
+.debit_content_4 .close_btn:hover,
+.debit_content_4 .close_btn:focus {
+    padding: 10px 50px;
+    background-color: #fff;
+    color: #97144d;
+    border: 1px solid #97144d;
+}
+
+.debit_content_4 .debit_buttons .enter_details {
+    font-family: lato-bold;
+    font-size: 1rem;
+    padding: 9px;
+    background-color: #97144d;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.regards, .greeting {
+    margin: 10px 0;
+}
+/*debit-page4 css end*/
+
+/* selectbox */
+.select_box_container .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: unset;
+    font-family: 'lato-bold';
+    padding: 0 5px;
+    font-size: 1rem;
+    overflow: unset;
+    text-overflow: unset;
+    white-space: unset;
+    max-width: none;
+    width: 100%;
+}
+
+.select_box_container .select2-container--default .select2-selection--single {
+    outline: none;
+    -webkit-appearance: none;
+    width: auto;
+    border: none;
+    border-radius: unset;
+    border: none;
+}
+
+.select_box_container {
+    position: relative;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.select_box_container .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    font-family: lato-regular;
+    font-size: 1rem;
+    opacity: 0;
+    color: rgba(57,57,57,0.5);
+}
+
+.select_box_container .select2-container--default .select2-selection--single:focus .select2-selection__placeholder {
+    opacity: 1;
+}
+
+.select_box_container .select2-container--default .select2-selection--single .select2-selection__arrow {
+    display: block !important;
+}
+
+.select_box_container .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #97144d transparent transparent transparent;
+    border-style: solid;
+    border-width: 8px 6px 0 6px !important;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+
+.select_box_container .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-color: #97144d transparent transparent transparent;
+    border-style: solid;
+    border-width: 8px 6px 0 6px !important;
+    transform: rotate(180deg);
+}
+
+.select_box_container:after, .select_box_container_2:after {
+    display: none;
+}
+/*select box*/
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    display: none !important;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #97144d;
+    color: white;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable:hover {
+    background-color: #97144d;
+    color: #fff;
+}
+.select2-container--default .select2-results__option--selected {
+    background-color: #fff;
+}
+
+/*selectbox end*/
+
+@media (max-width: 992px) {
+    .form1 form, .form2 form {
+        width: 79%;
+    }
+    .breadcrumb, .debit_heading {
+        padding: 0 20px;
+    }
+    .debit_content, .debit_content_2 {
+        margin: 0 20px;
+    }
+    .process_debit {
+        margin-right: 30px;
+    }
+    .notes {
+        margin-top: 0;
+    }
+    .link_email {
+        font-size: 0.8rem;
+    }
+    .debit_content_4 {
+        margin: 37px 20px 40px 20px;
+    }
+}
+
+@media (max-width:768px) {
+    .debit_content, .debit_content_2 {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    .process_debit {
+        margin-right: 0;
+    }
+    .notes {
+        margin-top: 25px;
+    }
+    .form1, .form2_content {
+        flex-direction: column;
+    }
+    .form-group {
+        margin-bottom: 20px !important;
+    }
+    .select_box_container,
+    .select_box_container_2 {
+        margin: 25px 0 15px 0 ;
+    }
+    .form1 form, .form2 form {
+        width: 100%;
+    }
+    .register_emailid {
+        display: flex;
+        margin: 25px 0;
+    }
+    .credit_modal_content {
+        width: 80%;
+        height: 90%;
+    }
+    
+    .register_email_header {
+        font-size: 2.3rem;
+    }
+    .captcha_content {
+        width: 100%;
+    }
+
+    .process_debit {
+        padding: 35px 15px 70px 15px;
+        width: 100%;
+    }
+    .debit_content_4 .image {
+        display: none;
+    }
+    .debit_content_4 .process_debit {
+        padding: 27px 24px 0 24px;
+    }
+}
+
+@media (max-width:576px) {
+    _:-ms-fullscreen, :root .navbar-brand img {
+        width: 90px;
+    }
+    .breadcrumb {
+        display: none;
+    }
+    .debit_heading {
+        font-size: 1.6rem;
+        padding: 0 15px;
+    }
+    .form-group .debit_label, .debit_label {
+        font-size: 0.72rem;
+    }
+    .debit_content, .debit_content_2 {
+        margin: 0 15px;
+    }
+    .debit_content_2 .form-group {
+        margin: 0 0 30px 0;
+    }
+    .process_debit {
+        min-width: 0;
+        width: 100%;
+        height: auto;
+        padding: 27px 24px;
+    }
+
+    .captcha_content .icon-refresh {
+        margin-left: 20px;
+    }
+    .captcha_letter {
+        margin-left: 20px;
+    }
+    .debit_content {
+        margin: 0 15px;
+    }
+    .enter_details {
+        padding: 9px 30px !important;
+    }
+    .authorization_checkbox .checkbox_text,
+    .email_text .clickhere {
+        font-size: 0.8rem;
+        display: inline-block;
+    }
+    .register_emailid {
+        align-items: center;
+    }
+    .debit_content_4 {
+        margin: 37px 15px 40px 15px;
+    }
+    .register_email_header {
+        font-size: 1.7rem;
+    }
+}
+
+
+

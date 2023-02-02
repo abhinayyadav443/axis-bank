@@ -1,0 +1,888 @@
+@font-face  {
+    src: url(./cssfonts/freakshow.regular.ttf);
+    font-family: freakshow-regular;
+}
+
+/*for animation*/
+.carousel-fade .carousel-item {
+	opacity: 0;
+	transition-duration: 0.3s;
+	transition-property: opacity;
+}
+.carousel-fade .carousel-item.active {
+	opacity: 1;
+}
+
+/*animation style ends here*/
+
+/*navbar start*/
+_:-ms-fullscreen, :root .serviceDropdown .services_card .services_link {
+    display: block;
+    width: 100%;
+}
+/*navbar end*/
+
+.debit_page_container {
+    margin-top: 35px;
+}
+
+.debit_heading {
+    font-family: lato-regular;
+    font-size: 1.813rem;
+    color: #97144d;
+    padding: 0 60px;
+}
+
+/*quick actions*/
+.page_title {
+    font-size: 1.071rem;
+    font-family: "Lato-Bold", sans-serif;
+    margin-bottom: 7px;
+    color: #515151;
+    padding: 0 60px;
+}
+
+/*breadcrum*/
+.breadcrumb {
+    padding: 0 1rem 0 0;
+    background-color: transparent !important;
+    margin-bottom: 0 !important;
+    padding: 0 60px;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "\e93b";
+    color: #ababab;
+    font-family: 'icomoon';
+    display: inline-block;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    vertical-align: middle;
+    font-size: 7px;
+}
+
+.breadcrumb .breadcrumb-item a {
+    color: #434343;
+    font-size: 1rem;
+    font-family: lato-regular;
+}
+
+/*breadcrum end*/
+
+.debit_content, .debit_content_2 {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    margin: 0 30px 0 60px;
+    padding: 28px 0;
+}
+
+.process_debit {
+    min-width: 438px;
+    height: 345px;
+    padding: 37px 53px 50px 53px;
+    margin-right: 60px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 3px 40px 0 rgba(0,0,0,0.07);
+    -moz-box-shadow: 0 3px 40px 0 rgba(0,0,0,0.07);
+    box-shadow: 0 3px 40px 0 rgba(0,0,0,0.07);
+}
+
+.debit_para {
+    font-family: lato-regular;
+    font-size: 1.125rem;
+    color: #171717;
+}
+
+.form-control {
+    display: inline-block;
+}
+
+.form-control::placeholder {
+    font-family: lato-regular;
+    font-size: 1rem;
+    opacity: 0;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.form-control:focus::placeholder {
+    font-family: lato-regular;
+    font-size: 1rem;
+    opacity: 1;
+}
+
+.process_debit .form-text {
+    font-family: lato-bold;
+    font-size: 0.75rem;
+    color: #393939 !important;
+    opacity: 0.8;
+}
+
+.form-group {
+    position: relative;
+}
+
+.captcha_label {
+    font-size: 1.125rem;
+}
+
+/*axis way start*/
+
+.form-group .debit_label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7px 0 0 0;
+    -webkit-transition: all 200ms;
+    -o-transition: all 200ms;
+    -moz-transition: all 200ms;
+    transition: all 200ms;
+    font-size: 1rem;
+    font-family: lato-regular;
+    margin-bottom: 0 !important;
+    pointer-events: none;
+}
+.form-group .form-control:focus + .debit_label,
+.form-group .form-control:valid + .debit_label {
+    font-size: 90%;
+    color: #97144d;
+    -webkit-transform: translate3d(0, -75%, 0);
+    -moz-transform: translate3d(0, -75%, 0);
+    transform: translate3d(0, -75%, 0);
+}
+
+.form-group .form-control:not(:focus)::-ms-input-placeholder,
+.form-group .form-control:not(:valid)::-ms-input-placeholder {
+    opacity: 0 ;
+}
+
+.form-group .form-control:focus::-ms-input-placeholder,
+.form-group .form-control:valid::-ms-input-placeholder {
+    opacity: 1 !important;
+}
+
+/*axis way end*/
+
+.form-control:-ms-input-placeholder {
+    font-family: lato-regular;
+    font-size: 1rem;
+    opacity: 0;
+}
+
+_:-ms-fullscreen, :root .notes { 
+    display: block !important;
+    width: 100% !important;
+}
+
+_:-ms-fullscreen, :root .generate_captcha {
+    background-color: #e6e6e6;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: 227px;
+    height: 40px;
+    padding: 8px 5px 8px 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: #97144d;
+    font-size: 1.57143rem;
+    line-height: 1;
+    position: relative;
+}
+
+_:-ms-fullscreen, :root .form-control:not(:focus) + .debit_label {
+    border-bottom: 1px solid #D9D9D9;
+    width: 100%;
+    transition-duration: 0ms;
+}
+
+_:-ms-fullscreen, :root .form-control:focus + .debit_label {
+    border-bottom: none !important;
+}
+
+/*IE 11 end*/
+
+/*edge start*/
+
+::-ms-input-placeholder + label {
+    cursor: text;
+    -webkit-transform: translate(0, 0.7rem) scale(1);
+    -moz-transform:    translate(0, 0.9rem) scale(1);
+    -ms-transform: translate(0, 0.4rem) scale(1);
+    -o-transform:      translate(0, 0.7rem) scale(1);
+    transform: translate(0, 0.4rem) scale(1);
+    transform-origin: left bottom;
+}
+
+/*edge end*/
+
+.process_debit .form-group .form-control {
+    border: 1px solid transparent !important;
+    border-bottom: 1px solid #D9D9D9 !important;
+    border-radius: 0;
+    padding-left: 0;
+}
+
+.process_debit .country-code,
+.process_debit .country-code::placeholder {
+    font-size: 1rem;
+}
+
+.captcha_content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-bottom: 30px !important;
+}
+
+.generate_captcha {
+    background-color: #e6e6e6;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    padding: 8px 10px 8px 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: #97144d;
+    font-size: 1.57143rem;
+    line-height: 1;
+    position: relative;
+
+}
+
+.refresh_captcha,
+.refresh_captcha:hover {
+    position: absolute;
+    right: 10px;
+    color: #97144d;
+}
+
+.captcha_input::placeholder {
+    font-family: lato-regular;
+    font-size: 1.25rem;
+    color: var(--debit_small);
+}
+
+#captcha_input {
+    font-size: 1.125rem;
+}
+
+.captcha_letter {
+    font-size: 0.938rem;
+    padding: 0 5px;
+    color: var(--debit_small);
+    margin-left: 20px;
+    font-family: freakshow-regular;
+}
+
+/* .captcha_content .icon-refresh {
+    color: #97144D;
+    padding: 9px;
+    background-color: #F8F8F8;
+    border-radius: 100%;
+    margin-left: 28px;
+    min-width: 33px;
+    height: 33px;
+} */
+
+.icon-refresh::before {
+    font-size: 1.375rem;
+}
+
+/* button */
+.debit_buttons {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.debit_buttons .reset {
+    font-family: lato-bold;
+    font-size: 1rem;
+    padding: 9px 25px;
+    background-color: #F0F0F0;
+    margin-right: 15px;
+    color: #171717;
+    opacity: 0.6;
+    border: 1px solid transparent;
+}
+
+.debit_buttons .enter_details {
+    font-family: lato-bold;
+    font-size: 1rem;
+    padding: 9px;
+    background-color: #97144d;
+    color: #fff;
+    border: 1px solid transparent;
+}
+.debit_buttons .enter_details:hover {
+    background-color: #fff;
+    color: #97144D;
+    border: 1px solid #97144d;
+}
+
+/* notes */
+.notes {
+    margin-top: 25px;
+}
+
+.notes_header {
+    font-family: lato-bold;
+    font-size: 1.25rem;
+    color: #171717;
+}
+
+.note_content li {
+    font-family: lato-regular;
+    font-size: 0.938rem;
+    color: #171717;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    opacity: 0.8;
+    position: relative;
+    padding-left: 20px;
+}
+
+.note_content li:before {
+    content: "";
+    background: url(../images/arrow.svg);
+    width: 8px;
+    height: 6px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    top: 9px;
+    left: 0;
+}
+
+/*debit page2 css start*/
+
+.debit_content_2 .resend_otp {
+    font-family: lato-bold;
+    font-size: 0.75rem;
+    color: #393939 !important;
+}
+
+.debit_content_2 .enter_details,
+.debit_content_3 .enter_details {
+    padding: 9px 34.5px;
+}
+
+.debit_content_2 .form-group {
+    margin: 44px 0 50px 0
+}
+
+/*debit page2 css ends*/
+
+/*debit-page3 css start*/
+
+/* The container */
+.checkbox_container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkbox_container .checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 15%;
+    right: 8%;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    display: none;
+  }
+
+  /* Style the checkmark/indicator */
+  .checkbox_container .checkmark:after {
+    content:"";
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #97144d;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .checked_label .select_box .checkbox_container .checkmark {
+    background-color: #fff;
+    border: 1px solid #707070;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+   .checked_label .select_box .checkbox_container .checkmark {
+    background-color: #97144d;
+    display: block;
+    border: 1px solid #97144d;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checked_label .checkmark:after {
+    content: "";
+    display: block;
+    border-color: #fff !important;
+  }
+
+/*custom checkbox end*/
+
+.debit_content_3 {
+    margin: 34px 85px 45px 60px;
+}
+
+.debit_content_3 .process_debit {
+    padding: 37px 39px 50px 39px;
+    height: auto;
+    margin-right: 0;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 3px 50px 0 rgba(0 ,0, 0, 0.07);
+    -moz-box-shadow: 0 3px 50px 0 rgba(0,0,0,0.07);
+    box-shadow: 0 3px 50px 0 rgba(0, 0, 0,  0.07);
+    width: 100%;
+}
+
+.debit_content_3 .select_card_heading {
+    font-family: lato-bold;
+    font-size: 1.063rem;
+    color: #97144d;
+}
+
+.debit_content_3 .cards .cards_content {
+    position: relative;
+    min-height: 96px;
+    min-width: 245px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 0 13px 0 0 ; 
+    border: 1px solid #D3D3D3;
+    border: 1px solid #D3D3D3;
+    cursor: pointer;
+}
+
+.debit_content_3 .checked_label {
+    -webkit-box-shadow: 0 3px 29px 0 rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 0 3px 29px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 3px 29px 0px rgba(0,0,0,0.06);
+    border: 1px solid transparent !important;
+}
+
+/* if focused checkmark should be checked */
+.cards .cards_content:focus .checkmark {
+    display: block;
+}
+
+.icon-axis_short_logo {
+    opacity: 0.3;
+}
+
+.icon-debit_normal {
+    opacity: 0.4;
+}
+
+.cards .cards_content:hover .checkbox_container .icon-debit_normal {
+    display: none;  
+}
+.checked_label:checked .cards .cards_content:hover .checkbox_container .icon-debit_normal {
+    display: none;
+}
+.checkbox_container {
+    height: 25px;
+}
+.cards .cards_content .checkbox_label {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; 
+}
+
+/*on hover checked*/
+.debit_content_3 .cards_content:hover .checkmark:after {
+    display: block;
+}
+.debit_content_3 .cards_content:hover .checkmark {
+    display: block;
+}
+.debit_content_3 .cards .cards_content:hover .icon-axis_short_logo {
+    opacity: 0.8;
+}
+/*on click start*/
+.debit_content_3 .checked_label .icon-debit_normal {
+    display: none;
+}
+.debit_content_3 .checked_label .icon-axis_short_logo {
+    opacity: 1;
+}
+
+.debit_content_3 .checked_label .cards_content {
+    -webkit-box-shadow: 0 3px 29px 0 rgba(0, 0, 0 , 0.06);
+    -moz-box-shadow: 0 3px 29px 0 rgba(0,0,0, 0.06);
+    box-shadow: 0 3px 29px 0 rgba(0, 0, 0, 0.06);
+    border: 1px solid transparent;
+}
+
+.debit_content_3 .cards .cards_content:hover {
+    box-shadow: 0 3px 29px 0 rgba(0, 0, 0,0.06);
+    -webkit-box-shadow: 0 3px 99px 0 rgba(0 0 0 ,0.06);
+    -moz-box-shadow: 0 3px 99px 0 rgba(0,0,0,0.06);
+    border: 1px solid transparent;
+}
+
+.debit_content_3 .cards_content:hover .checked_label .icon-axis_short_logo {
+    opacity: 1;
+}
+
+.debit_content_3 .checked_label .checkmark {
+    display: block;
+}
+/*on click end*/
+.debit_content_3 .select_box {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.debit_content_3 .checkbox_label {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.debit_content_3 .show {
+    display: flex !important;
+}
+
+.debit_content_3 .icon-axis_short_logo {
+    width: 34px;
+    height: 30px;
+    font-size: 30px;
+}
+
+.debit_content_3 .select_debit_card .cards {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*account no*/
+.cards_content .account {
+    margin-bottom: 0;
+    color: #171717;
+    font-family: 'lato-regular';
+    font-size: 1.063rem;
+    padding-top: 5px;
+}
+
+.checked_label .account {
+    color: #97144d;
+    /* margin-top: 10px; */
+}
+
+.debit_content_3 .debit_buttons {
+    margin-top: 31px;
+}
+/*css for checkbox cards*/
+/*debit-page3 css end*/
+
+/*debit-page4 css start*/
+.debit_content_4 {
+    margin: 37px 85px 40px 60px;
+}
+.debit_content_4 .great_text {
+    font-family: lato-regular;
+    font-size: 1.813rem;
+    color: #97144d;
+    margin-bottom: 9px;
+}
+
+.debit_content_4 .process_debit {
+    padding: 27px 48px 0 57px;
+    margin-right: 0;
+    height: auto;
+    width: 100%;
+}
+
+.debit_content_4 .image {
+    width: 30%;
+    margin-left: 15px;
+}
+
+.debit_content_4 .image img {
+    width: 100%;
+}
+
+.debit_content_4 .blocked_card_content {
+    display: block;
+    width: 100%;
+}
+
+.debit_content_4 .block_content_section {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+
+.debit_content_4 .para_text {
+    font-family: lato-regular;
+    font-size: 1.125rem;
+    color: #171717;
+    margin-bottom: 50px;
+}
+
+.debit_content_4 .debit_buttons {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.debit_content_4 .close_btn {
+    padding: 10px 50px;
+    background-color: #97144d;
+    color: #fff;
+    border: 1px solid transparent;
+}
+.debit_content_4 .close_btn:hover,
+.debit_content_4 .close_btn:focus {
+    padding: 10px 50px;
+    background-color: #fff;
+    color: #97144d;
+    border: 1px solid #97144d;
+}
+
+.debit_content_4 .debit_buttons .enter_details {
+    font-family: lato-bold;
+    font-size: 1rem;
+    padding: 9px;
+    background-color: #97144d;
+    color: #fff;
+    border: 1px solid transparent;
+}
+/*debit-page4 css end*/
+
+/*reponsiveness*/
+
+@media (max-width: 992px) {
+    .breadcrumb, .debit_heading, .page_title {
+        padding: 0 20px;
+    }
+    .debit_content, .debit_content_2 {
+        margin: 0 20px;
+    }
+    .process_debit {
+        margin-right: 30px;
+    }
+    .notes {
+        margin-top: 0;
+    }
+
+    /*page3 css*/
+    .debit_content_3 {
+        margin: 34px 20px 45px 20px !important;
+    }
+
+    /*page4 css*/
+    .debit_content_4 {
+        margin: 37px 20px 40px 20px;
+    }
+}
+
+@media (max-width:768px) {
+    .debit_content, .debit_content_2 {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    .process_debit {
+        margin-right: 0;
+    }
+    .notes {
+        margin-top: 25px;
+    }
+
+    /*page3 css*/
+    .select_debit_card .cards {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cards .cards_content, .checkbox_label {
+        width: 100%;
+        margin-bottom: 7px;
+    }
+
+    /*page4 css*/
+    .block_content_section {
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .debit_content_4 .image {
+        display: none;
+    }
+
+}
+
+@media (max-width: 576px) {
+    /*navbar start*/
+    _:-ms-fullscreen, :root .navbar-brand img {
+        width: 90px;
+    }
+    /*navbar ends*/
+    /*navbar start*/
+    _:-ms-fullscreen, :root .serviceDropdown .services_card {
+        width: 100%;
+        display: -ms-flexbox;
+        -ms-flex-align: center;
+    }
+    /*navbar end*/
+    .breadcrumb, .debit_heading, .page_title {
+        padding: 0 15px;
+    }
+    .breadcrumb {
+        display: none;
+    }
+    .debit_heading {
+        font-size: 1.6rem;
+    }
+    .debit_content, .debit_content_2 {
+        margin: 0 15px;
+    }
+    .debit_content_2 .form-group {
+        margin: 0 0 30px 0;
+    }
+    .process_debit {
+        min-width: 0;
+        width: 100%;
+        height: auto;
+        padding: 27px 24px;
+    }
+
+    .captcha_content .icon-refresh {
+        margin-left: 20px;
+    }
+    .captcha_letter {
+        margin-left: 20px;
+    }
+    .debit_content {
+        margin: 0 15px;
+    }
+
+    .form-group .debit_label {
+        font-size: 0.72rem;
+    }
+
+    .debit_content_2 .enter_details,
+    .debit_content_3 .enter_details {
+        padding: 9px 12.5px;
+    }
+
+    /*page3 css*/
+    .debit_content_3 {
+        margin: 34px 15px 45px 15px;
+    }
+    .cards_content {
+        width: 100%;
+    }
+
+    .debit_content_3 .process_debit {
+        padding: 37px 15px 50px 15px;
+    }
+
+    .debit_content_3 .cards .cards_content {
+        min-width: unset;
+        width: 100%;
+    }
+
+    /*page4 css */
+    .debit_content_4 .process_debit {
+        padding: 27px 25px 0 25px;
+        margin-right: 0;
+        height: auto;
+        width: 100%;
+    }
+    .debit_content_4 .process_debit .image {
+        display: none;
+    }
+}
+
